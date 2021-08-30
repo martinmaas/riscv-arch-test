@@ -1,0 +1,11 @@
+# RISC-V Architecture Test J Extension Makefrag
+#
+# Description: Makefrag for J Extension tests
+
+rv64i_sc_tests = \
+  zjpm
+
+
+rv64i_tests = $(addsuffix .elf, $(rv64i_sc_tests))
+
+target_tests += $(rv64i_tests)
